@@ -10,12 +10,13 @@
 # ========================
 #         Solution
 # ========================
+n = int(input())
+n1 = set(map(int,input().split()))
+m = int(input())
+m1 = set(map(int,input().split()))
+ans = n1.difference(m1)
+count = 0
+for i in ans:
+    count = count + 1
+print(count)    
 
-_ = int(input())
-SET_N = set(map(int, input().split()))
-
-_ = int(input())
-SET_B = set(map(int, input().split()))
-
-NEW_SET = SET_N.difference(SET_B)
-print(len(NEW_SET))
